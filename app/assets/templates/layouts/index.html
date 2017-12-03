@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crocs</title>
+</head>
+<body id='body'>
+<div class="app">
+    <div class="basket">
+        <div class="basket__logo">
+            <div class="basket__logo-prev" ><a href="http://0.0.0.0:3000/catalog/woman/basket">Вернуться назад</a></div>
+            <div class="basket__logo-logo">
+                <div class="header__logo-wrapper"  >
+                    <div class="header__logo-img"></div>
+                    <div class="header__logo-hover"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-cart">
+            <div class="payment-cart_title">Оплата банковской картой</div>
+
+            <div class="payment-cart__info">
+                <div class="info">
+                    <table>
+                        <tr>
+                            <td class="info_td">Номер заказа</td>
+                            <td class="info_td">356</td>
+                        </tr>
+                        <tr>
+                            <td class="info_summ">Сумма</td>
+                            <td class="info_summ">2700 <span class="ruble">₽</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="payment__cart">
+                    <form id="sberbank">
+                        <div class="payment__cart_left" >
+                            <div class="payment__cart_item ">
+                                <div class="payment__cart_item-name" >Номер карты</div>
+                                <input type="text" class="payment__cart_item-input" value="" name="cart">
+                            </div>
+
+                            <div class="payment__cart_item payment__cart_item-thru">
+                                <div class="payment__cart_item-name" >Valid Thru</div>
+                                <input class="payment__cart_item-input" value="" name="day" type="text">
+                                <span class="payment__cart_item-str">/</span>
+                                <input class="payment__cart_item-input" value="" name="date" type="text">
+                            </div>
+                        </div>
+                        <div class="payment__cart_right">
+                            <div class="payment__cart_item-name">CVV/CVC</div>
+                            <input type="text" class="payment__cart_item-input " value="" name="cvv">
+                            <div class="payment__cart_item-text">Последние три цифры на обратной стороне </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#" class="payment__link">Получить квитанцию по эл. почте</a>
+                <div class="payment__button">
+                    <button type="submit" form="sberbank" class="button button-green" >
+                        <span>Заплатить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket__footer">
+
+            <div class="basket__footer_cop">
+                © 2017 Crocs CIS
+            </div>
+            <div class="basket__footer_tel">
+                +7 (800) 333-02-91
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
